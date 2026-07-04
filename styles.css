@@ -398,29 +398,6 @@ footer p {
   font-size: 0.95rem;
 }
 
-footer .social-links {
-  margin-top: 1.5rem;
-  display: flex;
-  gap: 1.5rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-footer a {
-  color: var(--secondary-color);
-  transition: var(--transition);
-  border: 2px solid var(--secondary-color);
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  font-weight: 600;
-}
-
-footer a:hover {
-  background: var(--secondary-color);
-  color: var(--primary-color);
-  border-bottom: none;
-}
-
 /* ==========================================
    Animations
    ========================================== */
@@ -547,15 +524,6 @@ footer a:hover {
   footer {
     padding: 1.5rem 1rem;
   }
-
-  footer .social-links {
-    gap: 1rem;
-  }
-
-  footer a {
-    padding: 0.5rem 0.8rem;
-    font-size: 0.9rem;
-  }
 }
 
 @media (max-width: 480px) {
@@ -646,10 +614,6 @@ footer a:hover {
 
   footer p {
     font-size: 0.85rem;
-  }
-
-  footer .social-links {
-    gap: 0.5rem;
   }
 }
 
