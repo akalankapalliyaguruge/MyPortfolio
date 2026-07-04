@@ -398,6 +398,11 @@ footer p {
   font-size: 0.95rem;
 }
 
+footer p:first-child {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
 /* ==========================================
    Animations
    ========================================== */
