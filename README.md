@@ -19,7 +19,6 @@ This portfolio is built with:
 
 - HTML
 - CSS
-- JavaScript
 
 ## Featured Sections
 
