@@ -4,12 +4,13 @@ Welcome to my personal portfolio website repository.
 
 ## About Me
 
-I’m a developer building and showcasing my projects, experience, and skills here.
+I’m a developer passionate about building clean, responsive, and user-friendly web experiences. This portfolio showcases my work, skills, and progress as I continue learning and creating.
 
 ## What’s Inside
 
 - Portfolio website source code
-- Project highlights
+- Featured projects
+- Skills and experience
 - Contact information
 
 ## Technologies
@@ -19,6 +20,14 @@ This portfolio is built with:
 - HTML
 - CSS
 - JavaScript
+
+## Featured Sections
+
+- **Home** — a quick introduction
+- **About** — who I am and what I do
+- **Projects** — selected work and highlights
+- **Skills** — tools and technologies I use
+- **Contact** — ways to reach me
 
 ## Contact
 
