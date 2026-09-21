@@ -1,249 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akalanka Palliyaguruge | Software Developer</title>
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Syne:wght@400..800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Akalanka Palliyaguruge</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <main class="container">
 
-        <!-- Hero Section -->
-        <section class="hero-section">
-            <div class="hero-left">
-                <div class="hero-top-left">
-                    <span class="freelance-tag">SOFTWARE <strong>DEVELOPER</strong><br><strong>PORTFOLIO</strong></span>
-                </div>
+<div class="scroll-progress" id="scrollProgress"></div>
 
-                <div class="name-block zukiswa">
-                    <h1>AKALANKA</h1>
-                </div>
+<header>
+  <div class="header-inner">
+    <a class="mark" href="#top"></a>
+    <div class="header-extras">
+      <span class="clock" id="clock"></span>
+      <nav id="mainnav" data-open="false">
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainnav-list" aria-label="Toggle navigation">☰</button>
+        <ul id="mainnav-list">
+          <li><a href="#stack">Stack</a></li>
+          <li><a href="#work">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
 
-                <!-- Hand drawn arrow simulation using SVG -->
-                <div class="arrow-accent">
-                    <svg width="100" height="150" viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10 20 Q 50 100 90 140" stroke="black" stroke-width="2" fill="none"
-                            stroke-linecap="round" />
-                        <path d="M70 140 L 90 140 L 85 120" stroke="black" stroke-width="2" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </div>
+<main id="top">
 
-                <div class="name-block phiri">
-                    <h1>PALLIYAGURUGE</h1>
-                </div>
-            </div>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-anim">
+        
+        <h1 class="name">Akalanka<br>Palliyaguruge</h1>
+        <p class="intro">I build web applications, desktop tools, mobile apps and backend systems using Java, Python, Dart and modern web technologies — most recently a RAG system, a university portal app, a digital student ID system,  and a handful of smaller tools.</p>
+        <div class="hero-cta">
+          <a class="btn primary" href="AkalankaPalliyagurugeCV.pdf">Download CV</a>
+          <a class="btn ghost" href="#work">See the projects</a>
+        </div>
+      </div>
 
-            <div class="hero-right">
-                <!-- Image removed per user request -->
-            </div>
-        </section>
+      <div class="stack" id="stack" aria-label="Technical layers">
+        <div class="layer">
+          <div class="layer-name"><b>Web</b></div>
+          <div class="chips">
+            <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span>
+          </div>
+        </div>
+        <div class="layer">
+          <div class="layer-name"><b>Desktop</b></div>
+          <div class="chips">
+            <span class="chip">Java</span><span class="chip">Python</span>
+          </div>
+        </div>
+        <div class="layer">
+          <div class="layer-name"><b>Mobile</b></div>
+          <div class="chips">
+            <span class="chip">Flutter</span>
+          </div>
+        </div>
+        <div class="layer">
+          <div class="layer-name"><b>Database</b></div>
+          <div class="chips">
+            <span class="chip">MySQL</span><span class="chip">Firebase</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- My Work Section -->
-        <section class="my-work-section">
+  <section id="work">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Selected projects</h2>
+        <span class="count">4 projects</span>
+      </div>
 
-            <div class="work-content">
-                <div class="section-title-box my-work-title">
-                    <h2>MY WORK</h2>
-                </div>
+      <div class="work-list">
 
-                <p class="bio-text">
-                    <strong>Akalanka Palliyaguruge is a software developer experienced in building web applications,
-                        desktop applications, mobile applications and backend systems using Java, Python, Dart and
-                        modern web technologies.</strong>
-                </p>
+        <div class="work-item featured">
+          <span class="work-tag">RAG</span>
+          <div>
+            <span class="featured-badge">Most recent build</span>
+            <h3 class="work-title">SLIATEGPT - RAG Student Assistant </h3>
+            <p class="work-desc">A retrieval augmented generated system with built with Python, HTML where students can ask questions and generated answers based on SLIATE student handbook.</p>
+            <div class="work-stack"><span class="chip">Python</span><span class="chip">HTML</span></div>
+          </div>
+          <span class="work-link" style="border-bottom:none; color:var(--ink-soft); cursor:default;">Not shared publicly yet</span>
+        </div>
 
-                <div class="achievements">
-                    <!-- sliate.ac.lk -->
-                    <a href="https://github.com/akalankapalliyaguruge/sliate.ac.lk" target="_blank"
-                        rel="noopener noreferrer" style="color: inherit; text-decoration: none;" class="achievement">
-                        <svg class="star-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2v20M17 5l-10 14M22 12H2M19 17L5 7" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                        <div class="achievement-text">
-                            <h3>SLIATE.AC.LK</h3>
-                            <p> Student portal mobile application for academic information and management. </p>
-                        </div>
-                    </a>
+        <div class="work-item">
+          <span class="work-tag">MOB</span>
+          <div>
+            <h3 class="work-title">SLIATE Student Portal</h3>
+            <p class="work-desc">A mobile application for academic information and management, giving students a way to keep up with their institution on the move.</p>
+            <div class="work-stack"><span class="chip">Flutter</span><span class="chip">Firebase</span></div>
+          </div>
+          <a class="work-link" href="https://github.com/akalankapalliyaguruge/sliate.ac.lk">View on GitHub</a>
+        </div>
 
-                    <!-- Digital Student ID -->
-                    <a href="https://github.com/akalankapalliyaguruge/DigitalStudentIDSystem" target="_blank"
-                        rel="noopener noreferrer" style="color: inherit; text-decoration: none;" class="achievement">
-                        <svg class="star-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2v20M17 5l-10 14M22 12H2M19 17L5 7" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                        <div class="achievement-text">
-                            <h3>DIGITAL STUDENT<br>ID SYSTEM</h3>
-                            <p>A secure backend system developed with Java and MySQL to manage and issue digital student
-                                IDs.</p>
-                        </div>
-                    </a>
+        <div class="work-item">
+          <span class="work-tag">SYS</span>
+          <div>
+            <h3 class="work-title">Digital Student ID System</h3>
+            <p class="work-desc">A secure backend system, built with Java and MySQL, that manages and issues digital student identification.</p>
+            <div class="work-stack"><span class="chip">Java</span><span class="chip">MySQL</span></div>
+          </div>
+          <a class="work-link" href="https://github.com/akalankapalliyaguruge/DigitalStudentIDSystem">View on GitHub</a>
+        </div>        
 
-                    <!-- Anony -->
-                    <a href="https://akalankapalliyaguruge.github.io/Anony" target="_blank" rel="noopener noreferrer"
-                        style="color: inherit; text-decoration: none;" class="achievement">
-                        <svg class="star-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2v20M17 5l-10 14M22 12H2M19 17L5 7" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                        <div class="achievement-text">
-                            <h3>ANONY Q&A<br>WEB FORUM</h3>
-                            <p>A static anonymous forum built with HTML, CSS, and JS using local storage for data
-                                management.</p>
-                        </div>
-                    </a>
+        <div class="work-item">
+          <span class="work-tag">WEB</span>
+          <div>
+            <h3 class="work-title">Anony - Anonymous Q&A Platform</h3>
+            <p class="work-desc">An anonymous forum like Reddit built with HTML, CSS and JavaScript.</p>
+            <div class="work-stack"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span></div>
+          </div>
+          <a class="work-link" href="https://akalankapalliyaguruge.github.io/Anony">View live</a>
+        </div>
 
-                    <!-- Rock Paper Scissors -->
-                    <a href="https://github.com/akalankapalliyaguruge/RockPaperScissorGame" target="_blank"
-                        rel="noopener noreferrer" style="color: inherit; text-decoration: none;" class="achievement">
-                        <svg class="star-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2v20M17 5l-10 14M22 12H2M19 17L5 7" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                        <div class="achievement-text">
-                            <h3>ROCK PAPER<br>SCISSORS</h3>
-                            <p>An interactive desktop game built with Python and Tkinter for real-time play.</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
+    </div>
+  </section>
 
-        <!-- Experience Section -->
-        <section class="experience-section">
-            <div class="section-title-box experience-title">
-                <h2>EXPERIENCE</h2>
-            </div>
+  <section id="github">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>GitHub</h2>
+        <span class="count">@akalankapalliyaguruge</span>
+      </div>
 
-            <div class="experience-card">
-                <div class="experience-header">
-                    <div class="experience-role-box">
-                        <h3>IT TECHNICIAN INTERN</h3>
-                        <span class="experience-company">NATIONAL WATER SUPPLY AND DRAINAGE BOARD</span>
-                    </div>
-                    <span class="experience-date">JAN 2024 – JUN 2024</span>
-                </div>
-                <p class="experience-desc">
-                    Completed an internship providing technical support, troubleshooting hardware and software issues,
-                    maintaining system infrastructure, and assisting users with IT operations.
-                </p>
-            </div>
-        </section>
+      <div class="contrib" id="contribWrap" hidden>
+        <p class="contrib-total" id="contribTotal"></p>
+        <div class="contrib-scroll">
+          <div class="contrib-months" id="contribMonths"></div>
+          <div class="contrib-grid" id="contribGrid"></div>
+        </div>
+        <div class="contrib-legend">
+          <span>Less</span>
+          <span class="contrib-cell" data-level="0"></span>
+          <span class="contrib-cell" data-level="1"></span>
+          <span class="contrib-cell" data-level="2"></span>
+          <span class="contrib-cell" data-level="3"></span>
+          <span class="contrib-cell" data-level="4"></span>
+          <span>More</span>
+        </div>
+      </div>
 
-        <!-- Services Section -->
-        <section class="services-section">
-            <div class="section-title-box services-title">
-                <h2>TECHNICAL SKILLS</h2>
-            </div>
+      <div class="gh-fallback" id="ghFallback">
+        This calendar pulls live from GitHub — it fills in automatically here whenever it can reach GitHub, and stays current on its own as you keep committing. Meanwhile, see it directly on <a href="https://github.com/akalankapalliyaguruge">github.com/akalankapalliyaguruge</a>.
+      </div>
+    </div>
+  </section>
 
-            <div class="services-grid">
-                <!-- Service 1 -->
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                            <line x1="8" y1="21" x2="16" y2="21"></line>
-                            <line x1="12" y1="17" x2="12" y2="21"></line>
-                        </svg>
-                    </div>
-                    <div class="service-info">
-                        <h3><span class="underline">WEB</span><br><span class="underline">DEVELOPMENT</span></h3>
-                        <p>HTML, CSS, JavaScript, Responsive Design</p>
-                    </div>
-                </div>
+  <section id="experience">
+    <div class="wrap">
+      <div class="section-head"><h2>Experience</h2></div>
+      <div class="exp-entry">
+        <div class="exp-date">Jan 2024 – Jun 2024</div>
+        <div>
+          <h3 class="exp-role">IT Technician Intern</h3>
+          <p class="exp-org">National Water Supply and Drainage Board</p>
+          <p class="exp-desc">Provided technical support, troubleshooting hardware and software issues, maintaining system infrastructure, and assisting users with day-to-day IT operations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                <!-- Service 2 -->
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                            <line x1="2" y1="7" x2="22" y2="7"></line>
-                            <circle cx="5" cy="5" r="0.5" fill="currentColor"></circle>
-                            <circle cx="8" cy="5" r="0.5" fill="currentColor"></circle>
-                            <circle cx="11" cy="5" r="0.5" fill="currentColor"></circle>
-                            <line x1="8" y1="21" x2="16" y2="21"></line>
-                            <line x1="12" y1="17" x2="12" y2="21"></line>
-                        </svg>
-                    </div>
-                    <div class="service-info">
-                        <h3><span class="underline">DESKTOP</span><br><span class="underline">APPLICATIONS</span></h3>
-                        <p>Java, Python, GUI Development</p>
-                    </div>
-                </div>
+  <section id="education">
+    <div class="wrap">
+      <div class="section-head"><h2>Education</h2></div>
+      <div class="exp-entry">
+        <div class="exp-date">Aug 2024 – Aug 2026</div>
+        <div>
+          <h3 class="exp-role">Higher National Diploma in IT (HNDIT)</h3>
+          <p class="exp-org">Sri Lanka Institute of Advanced Technological Education</p>
+          <p class="exp-desc">Coursework covering software engineering and professional practice in IT, alongside the applied projects above.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                <!-- Service 3 -->
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-                            <line x1="12" y1="18" x2="12.01" y2="18"></line>
-                        </svg>
-                    </div>
-                    <div class="service-info">
-                        <h3><span class="underline">MOBILE</span><br><span class="underline">APPLICATION</span></h3>
-                        <p>Flutter, Android, Cross-Platform Mobile Apps</p>
-                    </div>
-                </div>
+  <section id="about" class="about">
+    <div class="wrap prose">
+      <div class="section-head"><h2>About</h2></div>
+      <p>Akalanka works across the full stack — from interfaces people touch directly, down to the databases holding everything together.</p>
+      <ul class="approach">
+        <li>Works the whole stack <br> mobile, desktop, web and backend instead of staying in one layer.</li>
+        <li>Matches architecture to the problem</li>
+        <li>Started in IT support before development <br> comfortable with real infrastructure and troubleshooting, not only writing code against a clean local setup.</li>
+      </ul>
+    </div>
 
-                <!-- Service 4 -->
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
-                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-                        </svg>
-                    </div>
-                    <div class="service-info">
-                        <h3><span class="underline">DATABASE</span><br><span class="underline">MANAGEMENT</span></h3>
-                        <p>MySQL, Firebase, Relational Databases, Data Security</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <div class="wrap contact-grid">
+      <div>
+        <h2>Get in touch</h2>
+        <p style="color:var(--ink-soft); margin-top:14px; max-width:48ch;">Open to opportunities in software engineering, particularly work that spans more than one layer of the stack.</p>
+      </div>
+      <ul class="contact-list">
+        <li class="contact-item-email">
+          <a href="mailto:akalankapalliyaguruge@outlook.com"><span class="lbl">Email</span> akalankapalliyaguruge@outlook.com</a>
+          <button class="copy-btn" id="copyEmailBtn" type="button" aria-label="Copy email address">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+          </button>
+        </li>
+        <li><a href="https://www.linkedin.com/in/akalankapalliyaguruge"><span class="lbl">LinkedIn</span> akalankapalliyaguruge</a></li>
+        <li><a href="https://github.com/akalankapalliyaguruge"><span class="lbl">GitHub</span> akalankapalliyaguruge</a></li>
+        <li><a href="AkalankaPalliyagurugeCV.pdf"><span class="lbl">CV</span> Download PDF</a></li>
+      </ul>
+    </div>
+  </section>
 
-        <!-- Contact Section -->
-        <section class="contact-section">
-            <div class="contact-info">
-                <div class="section-title-box connect-title">
-                    <h2>CONNECT WITH ME</h2>
-                </div>
+</main>
 
-                <p><a href="mailto:akalankapalliyaguruge@outlook.com"
-                        style="color: inherit; text-decoration: none;"><span
-                            class="underline">AKALANKAPALLIYAGURUGE@OUTLOOK.COM</span></a></p>
-                <p><a href="https://www.linkedin.com/in/akalankapalliyaguruge" target="_blank" rel="noopener noreferrer"
-                        style="color: inherit; text-decoration: none;"><span class="underline">LINKEDIN</span></a> / <a
-                        href="https://github.com/akalankapalliyaguruge" target="_blank" rel="noopener noreferrer"
-                        style="color: inherit; text-decoration: none;"><span class="underline">GITHUB</span></a></p>
-                <p style="margin-top: 1rem;">
-                    <a href="AkalankaPalliyagurugeCV.pdf" target="_blank" class="cv-download-btn">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                            <polyline points="7 10 12 15 17 10"></polyline>
-                            <line x1="12" y1="15" x2="12" y2="3"></line>
-                        </svg>
-                        DOWNLOAD CV
-                    </a>
-                </p>
-            </div>
-        </section>
+<footer>
+  <div class="wrap" style="display:flex; justify-content:space-between; width:100%; flex-wrap:wrap; gap:8px;">
+    <span>© <span id="year"></span> Akalanka Palliyaguruge</span>
+  </div>
+</footer>
 
-    </main>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Scroll progress bar
+  (function(){
+    var bar = document.getElementById('scrollProgress');
+    if (!bar) return;
+    function update(){
+      var h = document.documentElement;
+      var scrollable = h.scrollHeight - h.clientHeight;
+      var pct = scrollable > 0 ? (h.scrollTop / scrollable) * 100 : 0;
+      bar.style.width = pct + '%';
+    }
+    document.addEventListener('scroll', update, { passive: true });
+    update();
+  })();
+
+  // Contribution calendar — same live-when-hosted, quiet-fallback pattern,
+  // using a CORS-enabled public API that mirrors the GitHub contribution graph.
+  (function(){
+    var wrap = document.getElementById('contribWrap');
+    var totalEl = document.getElementById('contribTotal');
+    var monthsEl = document.getElementById('contribMonths');
+    var gridEl = document.getElementById('contribGrid');
+    var fallback = document.getElementById('ghFallback');
+    if (!wrap || !totalEl || !monthsEl || !gridEl || !fallback) return;
+    var user = 'akalankapalliyaguruge';
+
+    fetch('https://github-contributions-api.jogruber.de/v4/' + user + '?y=last')
+      .then(function(r){ return r.ok ? r.json() : Promise.reject(); })
+      .then(function(data){
+        var days = data.contributions;
+        if (!Array.isArray(days) || !days.length) return Promise.reject();
+
+        var startDow = new Date(days[0].date + 'T00:00:00').getDay();
+        var cells = [];
+        for (var p = 0; p < startDow; p++) cells.push(null);
+        days.forEach(function(d){ cells.push(d); });
+        var totalCols = Math.ceil(cells.length / 7);
+
+        gridEl.style.gridTemplateRows = 'repeat(7, 10px)';
+        monthsEl.style.gridTemplateColumns = 'repeat(' + totalCols + ', 10px)';
+        gridEl.innerHTML = '';
+        monthsEl.innerHTML = '';
+
+        var monthNames = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+        var lastMonth = -1;
+        var total = 0;
+
+        cells.forEach(function(c, idx){
+          var div = document.createElement('div');
+          div.className = 'contrib-cell';
+          if (c) {
+            div.setAttribute('data-level', c.level);
+            div.title = c.count + ' contribution' + (c.count === 1 ? '' : 's') + ' on ' + c.date;
+            total += c.count || 0;
+          }
+          gridEl.appendChild(div);
+
+          if (idx % 7 === 0 && c) {
+            var m = new Date(c.date + 'T00:00:00').getMonth();
+            if (m !== lastMonth) {
+              lastMonth = m;
+              var label = document.createElement('span');
+              label.textContent = monthNames[m];
+              label.style.gridColumn = String(Math.floor(idx / 7) + 1);
+              monthsEl.appendChild(label);
+            }
+          }
+        });
+
+        totalEl.textContent = total + ' contributions in the last year';
+        wrap.hidden = false;
+        fallback.hidden = true;
+      })
+      .catch(function(){
+        // Blocked or offline — fallback message stays as-is.
+      });
+  })();
+
+  // Copy email
+  (function(){
+    var btn = document.getElementById('copyEmailBtn');
+    if (!btn) return;
+    var copyIcon = btn.innerHTML;
+    var checkIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>';
+    btn.addEventListener('click', function(){
+      var email = 'akalankapalliyaguruge@outlook.com';
+      var done = function(){
+        btn.innerHTML = checkIcon;
+        btn.setAttribute('aria-label', 'Copied');
+        setTimeout(function(){
+          btn.innerHTML = copyIcon;
+          btn.setAttribute('aria-label', 'Copy email address');
+        }, 1500);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(email).then(done).catch(function(){});
+      }
+    });
+  })();
+
+  var navToggle = document.getElementById('navToggle');
+  var nav = document.getElementById('mainnav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', function(){
+      var open = nav.getAttribute('data-open') === 'true';
+      nav.setAttribute('data-open', String(!open));
+      navToggle.setAttribute('aria-expanded', String(!open));
+    });
+
+    nav.querySelectorAll('a').forEach(function(link){
+      link.addEventListener('click', function(){
+        nav.setAttribute('data-open', 'false');
+        navToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+
+</script>
+
 </body>
-
 </html>
